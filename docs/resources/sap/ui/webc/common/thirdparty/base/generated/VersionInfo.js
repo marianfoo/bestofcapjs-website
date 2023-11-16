@@ -1,0 +1,2 @@
+sap.ui.define(["exports"],function(e){"use strict";Object.defineProperty(e,"__esModule",{value:true});e.default=void 0;const i={version:"1.14.2",major:1,minor:14,patch:2,suffix:"",isNext:false,buildTime:1686557318};var t=i;e.default=t});
+//# sourceMappingURL=VersionInfo.js.map
