@@ -26,7 +26,7 @@
               type="Transparent"
               visible="{= ${device>/system/desktop}}"
               icon="sap-icon://font-awesome-icons/github"
-              press="sapMLib.URLHelper.redirect('https://github.com/ui5-community/bestofui5-website#readme', true)"
+              press="sapMLib.URLHelper.redirect('https://github.com/marianfoo/bestofcapjs-website#readme', true)"
             >
               <layoutData>
                 <OverflowToolbarLayoutData priority="{= ${device>/system/phone} === true ? 'AlwaysOverflow' : 'NeverOverflow' }" />
