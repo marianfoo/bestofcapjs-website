@@ -16,8 +16,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: "npm"
-          cache-dependency-path: "**/package-lock.json"
 
       # we need this for workspace mgmt
       - name: check npm version >= 7
