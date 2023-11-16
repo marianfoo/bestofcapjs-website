@@ -1,8 +1,8 @@
-# Best of UI5
+# Best of cap-js
 
-"Best of UI5" is the new entry page for the ui5-community.  
+"Best of cap-js" is the new entry page for the ui5-community.  
 It will show the best of community projects, be it applications, libraries, custom controls, tooling extensions, middlewares, tasks or Easy UI5 generators.  
-Everyone can be able to register their projects at Best of UI5.  
+Everyone can be able to register their projects at Best of cap-js.  
 The projects will be ranked by various information about the projects and filterable by important criteria.  
 This should help to find you the best suited reuse project for your development needs!
 
@@ -21,7 +21,7 @@ The packages are sorted by the growth of downloads in the last 30 days.
 
 You can here search/filter/sort the packages.  
 **You can also bookmark your searches. A url could look like this:**  
-<https://bestofui5.org/#/packages?search=live&tokens=middleware:type&sort=downloadsCurrentFortnight>
+<https://bestofcapjs.org/#/packages?search=live&tokens=middleware:type&sort=downloadsCurrentFortnight>
 
 Each packages has metadata added what type it is and what tags are associated with it.  
 Data is coming from GitHub, NPM and Visual Studio Marketplace.
@@ -61,7 +61,7 @@ Here is a diagram that illustrates the architecture of BestOfUI5.
 In short:  
 The repository `bestofui5-data` generates the data and serves it to the website, so it is effectively our backend for the website.  
 In the repository `bestofui5-website` only the frontend is maintained. This is generated after each commit in `main` branch.  
-![Best Of UI5 Diagramm](img/BestOfUI5_Architecture.png)
+![Best of cap-js Diagramm](img/BestOfUI5_Architecture.png)
 
 ## Frontend
 
@@ -104,7 +104,7 @@ Build is automated with GitHub Actions.
 On every push to `main`, the [`build`](https://github.com/ui5-community/bestofui5-website/blob/main/.github/workflows/build.yml) workflow is triggered.  
 This will transpile typescript to javascript and run `ui5 build self-contained --all`.  
 The result will be moved to the new folder [`docs`](https://github.com/ui5-community/bestofui5-website/tree/docs) and force pushed to the `docs` branch.  
-From there, GitHub Pages will automatically deploy the new version to the webpage <https://bestofui5.org/> .
+From there, GitHub Pages will automatically deploy the new version to the webpage <https://bestofcapjs.org/> .
 
 ### Testing
 

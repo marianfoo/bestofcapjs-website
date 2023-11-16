@@ -39,7 +39,7 @@
       <OverflowToolbarLayoutData priority="High" group="1" />
     </layoutData>
   </Button>
-  <Button
+  <!-- <Button
     text="{i18n>linkheader_fragment_applications}"
     class="sapUiNoMarginBegin sapUiNoMarginEnd"
     press=".onButtonHeaderSelect($event, 'applications')"
@@ -51,7 +51,7 @@
     <layoutData>
       <OverflowToolbarLayoutData priority="Low" group="2" />
     </layoutData>
-  </Button>
+  </Button> -->
   <Button
     text="{i18n>linkheader_fragment_timeline}"
     class="sapUiNoMarginBegin sapUiNoMarginEnd"

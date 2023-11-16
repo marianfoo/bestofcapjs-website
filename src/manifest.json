@@ -16,15 +16,15 @@
     },
     "dataSources": {
       "data": {
-        "uri": "https://raw.githubusercontent.com/ui5-community/bestofui5-data/live-data/data/data.json",
+        "uri": "https://raw.githubusercontent.com/marianfoo/bestofcapjs-data/live-data/data/data.json",
         "type": "JSON"
       },
       "versions": {
-        "uri": "https://raw.githubusercontent.com/ui5-community/bestofui5-data/live-data/data/versions.json",
+        "uri": "https://raw.githubusercontent.com/marianfoo/bestofcapjs-data/live-data/data/versions.json",
         "type": "JSON"
       },
       "contributors": {
-        "uri": "https://raw.githubusercontent.com/ui5-community/bestofui5-data/live-data/data/contributors.json",
+        "uri": "https://raw.githubusercontent.com/marianfoo/bestofcapjs-data/live-data/data/contributors.json",
         "type": "JSON"
       }
     }

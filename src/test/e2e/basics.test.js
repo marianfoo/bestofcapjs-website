@@ -11,6 +11,6 @@ describe("ui5 basic", () => {
 			await $("filtekuzfutkfk424214").waitForExist({ timeout: 10000 });
 		} catch (error) {}
 		const title = await browser.getTitle();
-		expect(title).toEqual("Hot Packages - Best of UI5");
+		expect(title).toEqual("Hot Packages - Best of cap-js");
 	});
 });
