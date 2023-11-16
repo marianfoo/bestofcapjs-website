@@ -78,7 +78,7 @@
       <OverflowToolbarLayoutData priority="Low" group="2" />
     </layoutData>
   </Button>
-  <Button
+  <!-- <Button
     class="sapUiTinyMargin openui5headerButton"
     core:require="{ sapMLib: 'sap/m/library' }"
     text="{i18n>app_view_addyourpackage}"
@@ -90,7 +90,7 @@
     <layoutData>
       <OverflowToolbarLayoutData priority="AlwaysOverflow" />
     </layoutData>
-  </Button>
+  </Button> -->
   <Button
     class="sapUiTinyMargin openui5headerButton"
     core:require="{ sapMLib: 'sap/m/library' }"
