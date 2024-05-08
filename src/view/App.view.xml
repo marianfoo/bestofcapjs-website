@@ -87,6 +87,13 @@
           </NavContainer>
         </FlexBox>
       </content>
+      <footer>
+        <Toolbar class="sapUiSmallMargin">
+          <ToolbarSpacer />
+          <Text text="© 2024. All rights reserved. Icons and images provided by SAP SE or an SAP affiliate company, used under the Apache 2.0 License." />
+          <ToolbarSpacer />
+        </Toolbar>
+      </footer>
     </Page>
   </App>
 </mvc:View>
