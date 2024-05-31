@@ -8,7 +8,7 @@ This should help to find you the best suited reuse project for your development 
 
 ## Add your package
 
-Just create a [issue with this template in the `bestofui5-data repo`](https://github.com/ui5-community/bestofui5-data/issues/new?assignees=marianfoo&labels=new%20package&template=new_package.md&title=Add%20new%20Package:) with your package and just check if you meet the prerequisites
+Just create a [issue with this template in the `bestofcapjs-data repo`](https://github.com/marianfoo/bestofcapjs-data/issues/new?assignees=marianfoo&labels=new%20package&template=new_package.md&title=Add%20new%20Package:) with your package and just check if you meet the prerequisites
 
 ## Views
 
@@ -56,11 +56,11 @@ This list shows the top contributors to the GitHub packages.
 
 ## Overview
 
-Here is a diagram that illustrates the architecture of BestOfUI5.  
+Here is a diagram that illustrates the architecture of bestofcapjs.  
 
 In short:  
-The repository `bestofui5-data` generates the data and serves it to the website, so it is effectively our backend for the website.  
-In the repository `bestofui5-website` only the frontend is maintained. This is generated after each commit in `main` branch.  
+The repository `bestofcapjs-data` generates the data and serves it to the website, so it is effectively our backend for the website.  
+In the repository `bestofcapjs-website` only the frontend is maintained. This is generated after each commit in `main` branch.  
 ![Best of cap-js Diagramm](img/BestOfUI5_Architecture.png)
 
 ## Frontend
@@ -86,7 +86,7 @@ To display this data we use [`chart.js`](https://www.npmjs.com/package/chart.js)
 To use this library install via NPM [`ui5-tooling-modules`](https://www.npmjs.com/package/ui5-tooling-modules) and `chart.js`.  
 As template to integrate `chart.js` we use almost the same implementation from [@akudev](https://github.com/akudev) in this tutorial:
 [ui5-typescript-tutorial - Using NPM Packages](https://github.com/SAP-samples/ui5-typescript-tutorial/tree/main/exercises/ex8)  
-For a better usage we create a [custom control](https://github.com/ui5-community/bestofui5-website/blob/main/src/control/BarChart.ts) to use a bar chart.
+For a better usage we create a [custom control](https://github.com/marianfoo/bestofcapjs-website/blob/main/src/control/BarChart.ts) to use a bar chart.
 Now we can use this chart in the [`Object.view.xml#L61-L63`](https://github.com/ui5-community/bestofui5-website/blob/5a33b4b710d8143f1d07195bba9ca28696871995/src/view/Object.view.xml#L83-L85) to display the data.
 
 ### UI5 Web Components
@@ -101,29 +101,29 @@ Through direct integration with OpenUI5 the use is as simple as any other contro
 ### Build & Deployment
 
 Build is automated with GitHub Actions.  
-On every push to `main`, the [`build`](https://github.com/ui5-community/bestofui5-website/blob/main/.github/workflows/build.yml) workflow is triggered.  
+On every push to `main`, the [`build`](https://github.com/marianfoo/bestofcapjs-website/blob/main/.github/workflows/build.yml) workflow is triggered.  
 This will transpile typescript to javascript and run `ui5 build self-contained --all`.  
-The result will be moved to the new folder [`docs`](https://github.com/ui5-community/bestofui5-website/tree/docs) and force pushed to the `docs` branch.  
+The result will be moved to the new folder [`docs`](https://github.com/marianfoo/bestofcapjs-website/tree/docs) and force pushed to the `docs` branch.  
 From there, GitHub Pages will automatically deploy the new version to the webpage <https://bestofcapjs.org/> .
 
 ### Testing
 
 We run [`wdi5`](https://github.com/js-soft/wdi5) tests on every Pull Request.  
 Implicitly, the build is also tested before the wdi5 tests, since it is executed before the tests.  
-The tests are located in the [`test`](https://github.com/ui5-community/bestofui5-website/tree/main/src/test) folder.  
-We run the tests with [mock data](https://github.com/ui5-community/bestofui5-website/tree/main/src/localService) to make sure we get consistent results on the tests.
+The tests are located in the [`test`](https://github.com/marianfoo/bestofcapjs-website/tree/main/src/test) folder.  
+We run the tests with [mock data](https://github.com/marianfoo/bestofcapjs-website/tree/main/src/localService) to make sure we get consistent results on the tests.
 
 ## Backend
 
-**The backend is located in a seperate repository [`bestofui5-data`](https://github.com/ui5-community/bestofui5-data#readme).**  
+**The backend is located in a seperate repository [`bestofcapjs-data`](https://github.com/marianfoo/bestofcapjs-data#readme).**  
 **For a more detailed documentation read the readme there.**
 
 We crawl data from GitHub and NPM.  
-The source code is written in typescript and in folder [`src`](https://github.com/ui5-community/bestofui5-data/tree/main/src).
+The source code is written in typescript and in folder [`src`](https://github.com/marianfoo/bestofcapjs-data/tree/main/src).
 It creates two json files (`data`, `versions`) which will be used as a model in the UI5 App.  
-The latest update of the files are located in the [`data`](https://github.com/ui5-community/bestofui5-data/tree/live-data/data) folder on the `live-data` branch.
+The latest update of the files are located in the [`data`](https://github.com/marianfoo/bestofcapjs-data/tree/live-data/data) folder on the `live-data` branch.
 The frontend is using these raw files [directly from the branch](https://github.com/ui5-community/bestofui5-website/blob/5a33b4b710d8143f1d07195bba9ca28696871995/src/manifest.json#L17-L27).  
-The packages are crawled from are located in [`sources.json`](https://github.com/ui5-community/bestofui5-data/blob/main/sources.json).
+The packages are crawled from are located in [`sources.json`](https://github.com/marianfoo/bestofcapjs-data/blob/main/sources.json).
 
 ## DevOps
 
@@ -149,7 +149,7 @@ This makes it easy to access and test the app.
 Either [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) for dependency management.
 
 git clone:
-`> git clone https://github.com/ui5-community/bestofui5-website`
+`> git clone https://github.com/marianfoo/bestofcapjs-website`
 
 Install:
 `> npm install`

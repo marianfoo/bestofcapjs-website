@@ -1,13 +1,13 @@
 {
-  "name": "bestofui5-website",
+  "name": "bestofcapjs-website",
   "version": "0.15.0",
-  "description": "bestofui5-website - UI5 Application",
+  "description": "bestofcapjs-website - UI5 Application",
   "private": true,
   "author": "Marian Zeis",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ui5-community/bestofui5-website.git"
+    "url": "https://github.com/marianfoo/bestofcapjs-website.git"
   },
   "scripts": {
     "prepare": "node ./.husky/skip.js || husky install",
