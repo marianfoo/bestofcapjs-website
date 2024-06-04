@@ -1,6 +1,6 @@
 # Best of cap-js
 
-"Best of cap-js" is the new entry page for the ui5-community.  
+"Best of cap-js" is the new entry page for the cap-community.  
 It will show the best of community projects, be it applications, libraries, custom controls, tooling extensions, middlewares, tasks or Easy UI5 generators.  
 Everyone can be able to register their projects at Best of cap-js.  
 The projects will be ranked by various information about the projects and filterable by important criteria.  
