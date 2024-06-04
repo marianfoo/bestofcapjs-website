@@ -13,7 +13,8 @@
           filters : [
               { path : 'type', operator : 'NE', value1 : 'generator'},
               { path : 'type', operator : 'NE', value1 : 'application'},
-              { path : 'type', operator : 'NE', value1 : 'vscode'}
+              { path : 'type', operator : 'NE', value1 : 'vscode'},
+              { path : 'type', operator : 'NE', value1 : 'sampleapp'}
           ], 
           and :true
       }]
