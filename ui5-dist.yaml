@@ -1,6 +1,6 @@
 specVersion: "3.0"
 metadata:
-  name: org.openui5.ui5community
+  name: org.openui5.bestofui5
 type: application
 resources:
   configuration:
